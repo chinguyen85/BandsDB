@@ -1,0 +1,971 @@
+{
+  "notes": "Real bands with condensed discographies for demo use. Durations are approximate.",
+  "bands": [
+    {
+      "name": "Metallica",
+      "founded": 1981,
+      "origin": "Los Angeles, California, USA",
+      "genres": [
+        "Heavy Metal",
+        "Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "James Hetfield",
+          "role": "Vocals, Rhythm Guitar",
+          "joined": 1981
+        },
+        {
+          "name": "Lars Ulrich",
+          "role": "Drums",
+          "joined": 1981
+        },
+        {
+          "name": "Kirk Hammett",
+          "role": "Lead Guitar",
+          "joined": 1983
+        },
+        {
+          "name": "Robert Trujillo",
+          "role": "Bass",
+          "joined": 2003
+        }
+      ],
+      "links": {
+        "website": "https://www.metallica.com",
+        "wikipedia": "https://en.wikipedia.org/wiki/Metallica",
+        "spotify": "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB",
+        "youtube": "https://www.youtube.com/@Metallica"
+      },
+      "albums": [
+        {
+          "title": "Master of Puppets",
+          "release_year": 1986,
+          "genre": "Thrash Metal",
+          "songs": [
+            {
+              "title": "Battery",
+              "length": "05:12"
+            },
+            {
+              "title": "Master of Puppets",
+              "length": "08:36"
+            },
+            {
+              "title": "The Thing That Should Not Be",
+              "length": "06:36"
+            },
+            {
+              "title": "Welcome Home (Sanitarium)",
+              "length": "06:27"
+            },
+            {
+              "title": "Disposable Heroes",
+              "length": "08:16"
+            },
+            {
+              "title": "Leper Messiah",
+              "length": "05:40"
+            },
+            {
+              "title": "Orion",
+              "length": "08:27"
+            },
+            {
+              "title": "Damage, Inc.",
+              "length": "05:32"
+            }
+          ]
+        },
+        {
+          "title": "Metallica (The Black Album)",
+          "release_year": 1991,
+          "genre": "Heavy Metal",
+          "songs": [
+            {
+              "title": "Enter Sandman",
+              "length": "05:31"
+            },
+            {
+              "title": "Sad But True",
+              "length": "05:25"
+            },
+            {
+              "title": "Holier Than Thou",
+              "length": "03:48"
+            },
+            {
+              "title": "The Unforgiven",
+              "length": "06:27"
+            },
+            {
+              "title": "Wherever I May Roam",
+              "length": "06:44"
+            },
+            {
+              "title": "Nothing Else Matters",
+              "length": "06:28"
+            },
+            {
+              "title": "Of Wolf and Man",
+              "length": "04:16"
+            },
+            {
+              "title": "The God That Failed",
+              "length": "05:08"
+            }
+          ]
+        },
+        {
+          "title": "Ride the Lightning",
+          "release_year": 1984,
+          "genre": "Thrash Metal",
+          "songs": [
+            {
+              "title": "Fight Fire with Fire",
+              "length": "04:44"
+            },
+            {
+              "title": "Ride the Lightning",
+              "length": "06:36"
+            },
+            {
+              "title": "For Whom the Bell Tolls",
+              "length": "05:10"
+            },
+            {
+              "title": "Fade to Black",
+              "length": "06:57"
+            },
+            {
+              "title": "Creeping Death",
+              "length": "06:36"
+            },
+            {
+              "title": "The Call of Ktulu",
+              "length": "08:55"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Iron Maiden",
+      "founded": 1975,
+      "origin": "London, England, UK",
+      "genres": [
+        "Heavy Metal",
+        "NWOBHM"
+      ],
+      "members": [
+        {
+          "name": "Bruce Dickinson",
+          "role": "Vocals",
+          "joined": 1981
+        },
+        {
+          "name": "Steve Harris",
+          "role": "Bass",
+          "joined": 1975
+        },
+        {
+          "name": "Dave Murray",
+          "role": "Guitar",
+          "joined": 1976
+        },
+        {
+          "name": "Adrian Smith",
+          "role": "Guitar",
+          "joined": 1980
+        },
+        {
+          "name": "Nicko McBrain",
+          "role": "Drums",
+          "joined": 1982
+        }
+      ],
+      "links": {
+        "website": "https://www.ironmaiden.com",
+        "wikipedia": "https://en.wikipedia.org/wiki/Iron_Maiden",
+        "spotify": "https://open.spotify.com/artist/6mdiAmATAx73kdxrNrnlao",
+        "youtube": "https://www.youtube.com/@ironmaiden"
+      },
+      "albums": [
+        {
+          "title": "The Number of the Beast",
+          "release_year": 1982,
+          "genre": "Heavy Metal",
+          "songs": [
+            {
+              "title": "Invaders",
+              "length": "03:22"
+            },
+            {
+              "title": "Children of the Damned",
+              "length": "04:34"
+            },
+            {
+              "title": "The Prisoner",
+              "length": "06:03"
+            },
+            {
+              "title": "22 Acacia Avenue",
+              "length": "06:36"
+            },
+            {
+              "title": "The Number of the Beast",
+              "length": "04:50"
+            },
+            {
+              "title": "Run to the Hills",
+              "length": "03:54"
+            },
+            {
+              "title": "Hallowed Be Thy Name",
+              "length": "07:08"
+            }
+          ]
+        },
+        {
+          "title": "Powerslave",
+          "release_year": 1984,
+          "genre": "Heavy Metal",
+          "songs": [
+            {
+              "title": "Aces High",
+              "length": "04:29"
+            },
+            {
+              "title": "2 Minutes to Midnight",
+              "length": "06:00"
+            },
+            {
+              "title": "Flash of the Blade",
+              "length": "04:02"
+            },
+            {
+              "title": "Powerslave",
+              "length": "07:12"
+            },
+            {
+              "title": "Rime of the Ancient Mariner",
+              "length": "13:34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nirvana",
+      "founded": 1987,
+      "origin": "Aberdeen, Washington, USA",
+      "genres": [
+        "Grunge",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Kurt Cobain",
+          "role": "Vocals, Guitar",
+          "joined": 1987
+        },
+        {
+          "name": "Krist Novoselic",
+          "role": "Bass",
+          "joined": 1987
+        },
+        {
+          "name": "Dave Grohl",
+          "role": "Drums",
+          "joined": 1990
+        }
+      ],
+      "links": {
+        "website": "https://www.nirvana.com",
+        "wikipedia": "https://en.wikipedia.org/wiki/Nirvana_(band)",
+        "spotify": "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh",
+        "youtube": "https://www.youtube.com/@nirvana"
+      },
+      "albums": [
+        {
+          "title": "Nevermind",
+          "release_year": 1991,
+          "genre": "Grunge / Alternative Rock",
+          "songs": [
+            {
+              "title": "Smells Like Teen Spirit",
+              "length": "05:01"
+            },
+            {
+              "title": "In Bloom",
+              "length": "04:15"
+            },
+            {
+              "title": "Come as You Are",
+              "length": "03:39"
+            },
+            {
+              "title": "Lithium",
+              "length": "04:17"
+            },
+            {
+              "title": "Polly",
+              "length": "02:56"
+            },
+            {
+              "title": "Drain You",
+              "length": "03:44"
+            }
+          ]
+        },
+        {
+          "title": "In Utero",
+          "release_year": 1993,
+          "genre": "Grunge / Alternative Rock",
+          "songs": [
+            {
+              "title": "Serve the Servants",
+              "length": "03:36"
+            },
+            {
+              "title": "Heart-Shaped Box",
+              "length": "04:39"
+            },
+            {
+              "title": "Rape Me",
+              "length": "02:49"
+            },
+            {
+              "title": "Pennyroyal Tea",
+              "length": "03:36"
+            },
+            {
+              "title": "All Apologies",
+              "length": "03:51"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Linkin Park",
+      "founded": 1996,
+      "origin": "Agoura Hills, California, USA",
+      "genres": [
+        "Nu Metal",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Chester Bennington",
+          "role": "Vocals",
+          "joined": 1999
+        },
+        {
+          "name": "Mike Shinoda",
+          "role": "Vocals, Guitar, Keyboards",
+          "joined": 1996
+        },
+        {
+          "name": "Brad Delson",
+          "role": "Guitar",
+          "joined": 1996
+        },
+        {
+          "name": "Dave Farrell",
+          "role": "Bass",
+          "joined": 2000
+        },
+        {
+          "name": "Rob Bourdon",
+          "role": "Drums",
+          "joined": 1996
+        }
+      ],
+      "links": {
+        "website": "https://www.linkinpark.com",
+        "wikipedia": "https://en.wikipedia.org/wiki/Linkin_Park",
+        "spotify": "https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz",
+        "youtube": "https://www.youtube.com/@linkinpark"
+      },
+      "albums": [
+        {
+          "title": "Hybrid Theory",
+          "release_year": 2000,
+          "genre": "Nu Metal / Alternative Rock",
+          "songs": [
+            {
+              "title": "Papercut",
+              "length": "03:05"
+            },
+            {
+              "title": "One Step Closer",
+              "length": "02:35"
+            },
+            {
+              "title": "Crawling",
+              "length": "03:29"
+            },
+            {
+              "title": "In the End",
+              "length": "03:36"
+            },
+            {
+              "title": "Pushing Me Away",
+              "length": "03:12"
+            }
+          ]
+        },
+        {
+          "title": "Meteora",
+          "release_year": 2003,
+          "genre": "Nu Metal / Alternative Rock",
+          "songs": [
+            {
+              "title": "Don't Stay",
+              "length": "03:08"
+            },
+            {
+              "title": "Somewhere I Belong",
+              "length": "03:33"
+            },
+            {
+              "title": "Breaking the Habit",
+              "length": "03:16"
+            },
+            {
+              "title": "Faint",
+              "length": "02:42"
+            },
+            {
+              "title": "Numb",
+              "length": "03:07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Red Hot Chili Peppers",
+      "founded": 1983,
+      "origin": "Los Angeles, California, USA",
+      "genres": [
+        "Funk Rock",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Anthony Kiedis",
+          "role": "Vocals",
+          "joined": 1983
+        },
+        {
+          "name": "Flea",
+          "role": "Bass",
+          "joined": 1983
+        },
+        {
+          "name": "Chad Smith",
+          "role": "Drums",
+          "joined": 1988
+        },
+        {
+          "name": "John Frusciante",
+          "role": "Guitar",
+          "joined": 1988
+        }
+      ],
+      "links": {
+        "website": "https://redhotchilipeppers.com",
+        "wikipedia": "https://en.wikipedia.org/wiki/Red_Hot_Chili_Peppers",
+        "spotify": "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5",
+        "youtube": "https://www.youtube.com/@redhotchilipeppers"
+      },
+      "albums": [
+        {
+          "title": "Blood Sugar Sex Magik",
+          "release_year": 1991,
+          "genre": "Alternative Rock / Funk Rock",
+          "songs": [
+            {
+              "title": "The Power of Equality",
+              "length": "04:03"
+            },
+            {
+              "title": "Give It Away",
+              "length": "04:43"
+            },
+            {
+              "title": "Under the Bridge",
+              "length": "04:24"
+            },
+            {
+              "title": "Suck My Kiss",
+              "length": "03:37"
+            },
+            {
+              "title": "If You Have to Ask",
+              "length": "03:37"
+            }
+          ]
+        },
+        {
+          "title": "Californication",
+          "release_year": 1999,
+          "genre": "Alternative Rock / Funk Rock",
+          "songs": [
+            {
+              "title": "Around the World",
+              "length": "03:59"
+            },
+            {
+              "title": "Parallel Universe",
+              "length": "04:30"
+            },
+            {
+              "title": "Scar Tissue",
+              "length": "03:37"
+            },
+            {
+              "title": "Californication",
+              "length": "05:21"
+            },
+            {
+              "title": "Otherside",
+              "length": "04:15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coldplay",
+      "founded": 1996,
+      "origin": "London, England, UK",
+      "genres": [
+        "Alternative Rock",
+        "Pop Rock"
+      ],
+      "members": [
+        {
+          "name": "Chris Martin",
+          "role": "Vocals, Piano",
+          "joined": 1996
+        },
+        {
+          "name": "Jonny Buckland",
+          "role": "Guitar",
+          "joined": 1996
+        },
+        {
+          "name": "Guy Berryman",
+          "role": "Bass",
+          "joined": 1996
+        },
+        {
+          "name": "Will Champion",
+          "role": "Drums",
+          "joined": 1997
+        }
+      ],
+      "links": {
+        "website": "https://www.coldplay.com",
+        "wikipedia": "https://en.wikipedia.org/wiki/Coldplay",
+        "spotify": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU",
+        "youtube": "https://www.youtube.com/@coldplay"
+      },
+      "albums": [
+        {
+          "title": "A Rush of Blood to the Head",
+          "release_year": 2002,
+          "genre": "Alternative / Pop Rock",
+          "songs": [
+            {
+              "title": "Politik",
+              "length": "05:18"
+            },
+            {
+              "title": "In My Place",
+              "length": "03:48"
+            },
+            {
+              "title": "Clocks",
+              "length": "05:07"
+            },
+            {
+              "title": "The Scientist",
+              "length": "05:09"
+            },
+            {
+              "title": "Amsterdam",
+              "length": "05:19"
+            }
+          ]
+        },
+        {
+          "title": "Viva la Vida or Death and All His Friends",
+          "release_year": 2008,
+          "genre": "Alternative / Pop Rock",
+          "songs": [
+            {
+              "title": "Life in Technicolor",
+              "length": "02:29"
+            },
+            {
+              "title": "Viva la Vida",
+              "length": "04:02"
+            },
+            {
+              "title": "Lovers in Japan",
+              "length": "06:51"
+            },
+            {
+              "title": "Lost!",
+              "length": "03:55"
+            },
+            {
+              "title": "Violet Hill",
+              "length": "03:43"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Muse",
+      "founded": 1994,
+      "origin": "Teignmouth, England, UK",
+      "genres": [
+        "Alternative Rock",
+        "Progressive Rock"
+      ],
+      "members": [
+        {
+          "name": "Matt Bellamy",
+          "role": "Vocals, Guitar, Keyboards",
+          "joined": 1994
+        },
+        {
+          "name": "Chris Wolstenholme",
+          "role": "Bass",
+          "joined": 1994
+        },
+        {
+          "name": "Dominic Howard",
+          "role": "Drums",
+          "joined": 1994
+        }
+      ],
+      "links": {
+        "website": "https://www.muse.mu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Muse_(band)",
+        "spotify": "https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI",
+        "youtube": "https://www.youtube.com/@muse"
+      },
+      "albums": [
+        {
+          "title": "Origin of Symmetry",
+          "release_year": 2001,
+          "genre": "Alternative / Prog Rock",
+          "songs": [
+            {
+              "title": "New Born",
+              "length": "06:03"
+            },
+            {
+              "title": "Bliss",
+              "length": "04:12"
+            },
+            {
+              "title": "Plug In Baby",
+              "length": "03:39"
+            },
+            {
+              "title": "Citizen Erased",
+              "length": "07:20"
+            }
+          ]
+        },
+        {
+          "title": "Black Holes and Revelations",
+          "release_year": 2006,
+          "genre": "Alternative / Prog Rock",
+          "songs": [
+            {
+              "title": "Take a Bow",
+              "length": "04:35"
+            },
+            {
+              "title": "Starlight",
+              "length": "04:00"
+            },
+            {
+              "title": "Supermassive Black Hole",
+              "length": "03:29"
+            },
+            {
+              "title": "Knights of Cydonia",
+              "length": "06:07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Foo Fighters",
+      "founded": 1994,
+      "origin": "Seattle, Washington, USA",
+      "genres": [
+        "Rock",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Dave Grohl",
+          "role": "Vocals, Guitar",
+          "joined": 1994
+        },
+        {
+          "name": "Nate Mendel",
+          "role": "Bass",
+          "joined": 1995
+        },
+        {
+          "name": "Pat Smear",
+          "role": "Guitar",
+          "joined": 1995
+        },
+        {
+          "name": "Taylor Hawkins",
+          "role": "Drums",
+          "joined": 1997
+        }
+      ],
+      "links": {
+        "website": "https://foofighters.com",
+        "wikipedia": "https://en.wikipedia.org/wiki/Foo_Fighters",
+        "spotify": "https://open.spotify.com/artist/7jy3rLJdDQY21OgRLCZ9sD",
+        "youtube": "https://www.youtube.com/@foofighters"
+      },
+      "albums": [
+        {
+          "title": "The Colour and the Shape",
+          "release_year": 1997,
+          "genre": "Rock / Alternative",
+          "songs": [
+            {
+              "title": "Monkey Wrench",
+              "length": "03:51"
+            },
+            {
+              "title": "My Hero",
+              "length": "04:20"
+            },
+            {
+              "title": "Everlong",
+              "length": "04:10"
+            },
+            {
+              "title": "Walking After You",
+              "length": "05:02"
+            }
+          ]
+        },
+        {
+          "title": "Wasting Light",
+          "release_year": 2011,
+          "genre": "Rock / Alternative",
+          "songs": [
+            {
+              "title": "Bridge Burning",
+              "length": "04:46"
+            },
+            {
+              "title": "Rope",
+              "length": "04:18"
+            },
+            {
+              "title": "Walk",
+              "length": "04:16"
+            },
+            {
+              "title": "Arlandria",
+              "length": "04:28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Queen",
+      "founded": 1970,
+      "origin": "London, England, UK",
+      "genres": [
+        "Rock",
+        "Progressive Rock",
+        "Pop Rock"
+      ],
+      "members": [
+        {
+          "name": "Freddie Mercury",
+          "role": "Vocals, Piano",
+          "joined": 1970
+        },
+        {
+          "name": "Brian May",
+          "role": "Guitar",
+          "joined": 1970
+        },
+        {
+          "name": "Roger Taylor",
+          "role": "Drums",
+          "joined": 1970
+        },
+        {
+          "name": "John Deacon",
+          "role": "Bass",
+          "joined": 1971
+        }
+      ],
+      "links": {
+        "website": "https://www.queenonline.com",
+        "wikipedia": "https://en.wikipedia.org/wiki/Queen_(band)",
+        "spotify": "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d",
+        "youtube": "https://www.youtube.com/@queen"
+      },
+      "albums": [
+        {
+          "title": "A Night at the Opera",
+          "release_year": 1975,
+          "genre": "Rock / Progressive Rock",
+          "songs": [
+            {
+              "title": "Death on Two Legs",
+              "length": "03:43"
+            },
+            {
+              "title": "You're My Best Friend",
+              "length": "02:52"
+            },
+            {
+              "title": "Love of My Life",
+              "length": "03:39"
+            },
+            {
+              "title": "Bohemian Rhapsody",
+              "length": "05:55"
+            }
+          ]
+        },
+        {
+          "title": "News of the World",
+          "release_year": 1977,
+          "genre": "Rock",
+          "songs": [
+            {
+              "title": "We Will Rock You",
+              "length": "02:02"
+            },
+            {
+              "title": "We Are the Champions",
+              "length": "03:01"
+            },
+            {
+              "title": "Spread Your Wings",
+              "length": "04:34"
+            },
+            {
+              "title": "It's Late",
+              "length": "06:27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Slipknot",
+      "founded": 1995,
+      "origin": "Des Moines, Iowa, USA",
+      "genres": [
+        "Nu Metal",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Corey Taylor",
+          "role": "Vocals",
+          "joined": 1997
+        },
+        {
+          "name": "Shawn Crahan",
+          "role": "Percussion",
+          "joined": 1995
+        },
+        {
+          "name": "Jim Root",
+          "role": "Guitar",
+          "joined": 1999
+        },
+        {
+          "name": "Mick Thomson",
+          "role": "Guitar",
+          "joined": 1996
+        }
+      ],
+      "links": {
+        "website": "https://slipknot1.com",
+        "wikipedia": "https://en.wikipedia.org/wiki/Slipknot_(band)",
+        "spotify": "https://open.spotify.com/artist/05fG473iIaoy82BF1aGhL8",
+        "youtube": "https://www.youtube.com/@slipknot"
+      },
+      "albums": [
+        {
+          "title": "Slipknot",
+          "release_year": 1999,
+          "genre": "Nu Metal / Heavy Metal",
+          "songs": [
+            {
+              "title": "Eyeless",
+              "length": "03:56"
+            },
+            {
+              "title": "Wait and Bleed",
+              "length": "02:27"
+            },
+            {
+              "title": "Surfacing",
+              "length": "03:38"
+            },
+            {
+              "title": "Spit It Out",
+              "length": "02:39"
+            }
+          ]
+        },
+        {
+          "title": "Iowa",
+          "release_year": 2001,
+          "genre": "Heavy Metal / Nu Metal",
+          "songs": [
+            {
+              "title": "People = Shit",
+              "length": "04:07"
+            },
+            {
+              "title": "Left Behind",
+              "length": "03:31"
+            },
+            {
+              "title": "My Plague",
+              "length": "03:02"
+            },
+            {
+              "title": "The Heretic Anthem",
+              "length": "04:14"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
