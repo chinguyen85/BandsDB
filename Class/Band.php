@@ -2,15 +2,15 @@
 class Band
 {
     private string $name, $origin;
-    private int $funded;
+    private int $founded;
 
-    private array $albums, $links, $members;
+    private array $albums, $links, $members, $genres;
 
-    public function __construct(string $name, string $origin, int $funded)
+    public function __construct(string $name, string $origin, int $founded)
     {
         $this->name = $name;
         $this->origin = $origin;
-        $this->funded = $funded;
+        $this->founded = $founded;
     }
 
     public function getName(){
@@ -18,6 +18,9 @@ class Band
     }
     public function getOrigin(){
         return $this->origin;
+    }
+    public function getFounded(){
+        return $this->founded;
     }
     public function setAlbums(array $albums){
         $this->albums = $albums;
@@ -37,5 +40,10 @@ class Band
     public function getMembers(){
         return $this->members;
     }
-
+    public function setGenres(array $genres){
+        $this->genres = $genres;
+    }
+    public function getGenres(){
+        return $this->genres;
+    }
 }
