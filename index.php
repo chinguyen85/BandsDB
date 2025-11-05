@@ -1,21 +1,11 @@
 <?php
 declare(strict_types=1);
+include "Class/Band.php";
+include "Class/Song.php";
+include "Class/Link.php";
+include "Class/Album.php";
+include "Class/Member.php";
 
-
-include "band.php";
-/**
- * Bands/Albums Viewer – single file
- *
- * - PHP 8.4+ compatible
- * - No external CSS/JS dependencies
- * - Search, genre filter, pagination
- * - Renders "cards" for bands and albums
- *
- * Character set:
- * - Default: UTF-8 (recommended for JSON with emojis/diacritics)
- * - If you must output ISO-8859-1, uncomment the ISO header below and
- *   convert strings via mb_convert_encoding in esc() helper.
- */
 
 // --- CONFIG ------------------------------------------------------------------
 const DATA_PATH = __DIR__ . '/bands_full.json';
