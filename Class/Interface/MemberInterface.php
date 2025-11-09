@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 namespace Interface;
+
 interface MemberInterface
 {
     public function getName(): string;

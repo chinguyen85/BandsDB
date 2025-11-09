@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 namespace Interface;
+
 interface SongInterface
 {
     public function getTitle(): string;

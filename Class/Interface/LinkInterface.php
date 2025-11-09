@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 namespace Interface;
+
 interface LinkInterface
 {
     public function getWebsite(): ?string;
