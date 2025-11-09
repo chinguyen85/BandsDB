@@ -5,6 +5,8 @@ include "Class/Song.php";
 include "Class/Link.php";
 include "Class/Album.php";
 include "Class/Member.php";
+include "Class/JsonDecode.php";
+include "Class/Helper.php";
 
 /**
  * Bands – OOP Rendering (Student Task Skeleton)
@@ -63,59 +65,34 @@ $band = new Band(
 // === OUTPUT EXAMPLES ===
 
 // Print the band’s basic info
-echo "Band: " . $band->getName() . PHP_EOL;
-echo "Founded: " . $band->getFounded() . PHP_EOL;
-echo "Origin: " . $band->getOrigin() . PHP_EOL;
+// echo "Band: " . $band->getName() . PHP_EOL;
+// echo "Founded: " . $band->getFounded() . PHP_EOL;
+// echo "Origin: " . $band->getOrigin() . PHP_EOL;
 
-// Print members
-echo PHP_EOL . "Members:" . PHP_EOL;
-foreach ($band->getMembers() as $m) {
-    echo "- {$m->getName()} ({$m->getRole()}, joined {$m->getJoined()})" . PHP_EOL;
-}
+// // Print members
+// echo PHP_EOL . "Members:" . PHP_EOL;
+// foreach ($band->getMembers() as $m) {
+//     echo "- {$m->getName()} ({$m->getRole()}, joined {$m->getJoined()})" . PHP_EOL;
+// }
 
-// Print albums and songs
-echo PHP_EOL . "Albums:" . PHP_EOL;
-foreach ($band->getAlbums() as $a) {
-    echo "{$a->getTitle()} ({$a->getReleaseYear()}) - {$a->getGenre()}" . PHP_EOL;
-    foreach ($a->getSongs() as $s) {
-        echo "   → {$s->getTitle()} ({$s->getLength()})" . PHP_EOL;
-    }
-}
+// // Print albums and songs
+// echo PHP_EOL . "Albums:" . PHP_EOL;
+// foreach ($band->getAlbums() as $a) {
+//     echo "{$a->getTitle()} ({$a->getReleaseYear()}) - {$a->getGenre()}" . PHP_EOL;
+//     foreach ($a->getSongs() as $s) {
+//         echo "   → {$s->getTitle()} ({$s->getLength()})" . PHP_EOL;
+//     }
+// }
 
-// Print links
-echo PHP_EOL . "Official website: " . $band->getLinks()?->getWebsite() . PHP_EOL;
+// // Print links
+// echo PHP_EOL . "Official website: " . $band->getLinks()?->getWebsite() . PHP_EOL;
 
-
-// ---------------------------------------------------------
-// TODO 1: READ & DECODE THE JSON FILE
-// ---------------------------------------------------------
-/**
- * GOAL:
- * - Read `bands_full.json` from the project root.
- * - Decode it to an associative array.
- * - Validate the shape and handle errors gracefully.
- *
- * HINTS:
- * - Verify the file exists before reading.
- * - Use a readable error message for each failure mode:
- *   - file not found
- *   - read failure
- *   - invalid JSON
- *   - missing "bands" key or wrong type
- *
- * ACCEPTANCE:
- * - You end up with a variable like $data where $data['bands'] is an array of band entries.
- *
- * WRITE YOUR CODE BELOW:
- */
-// $jsonPath = __DIR__ . '/bands_full.json';
-// $json     = ...
-// $data     = ...
-// Validate structure here...
-
+// READ & DECODE THE JSON FILE
+$jsonPath = __DIR__ . '/bands_full.json';
+$data = JsonDecode::readAndValidate($jsonPath);
 
 // ---------------------------------------------------------
-// TODO 2: BUILD OBJECTS FROM JSON
+// BUILD OBJECTS FROM JSON
 // ---------------------------------------------------------
 /**
  * GOAL:
@@ -140,28 +117,81 @@ echo PHP_EOL . "Official website: " . $band->getLinks()?->getWebsite() . PHP_EOL
  *
  * WRITE YOUR CODE BELOW:
  */
-
 $bands = [];
-// foreach ($data['bands'] as $bandData) {
+foreach ($data['bands'] as $bandData) {
 //     // 2.1 Links (nullable)
 //     //    - If "links" exists and is an array, create a Link object.
 //     //    - Otherwise, keep $links = null.
+    $links = null;
+    $jsonLinks = $bandData['links'];
+
+    if (isset($jsonLinks) && is_array($jsonLinks)) {
+        $links = new Link(
+            $jsonLinks['website'],
+            $jsonLinks['wikipedia'],
+            $jsonLinks['spotify'],
+            $jsonLinks['youtube']
+        );
+    } else {
+        $links = null;
+    }
 //
 //     // 2.2 Members
 //     //    - Start with an empty array: $members = [];
 //     //    - Loop "members" and create Member objects from (name, role, joined).
-//
+    $members = [];
+    $jsonMembers = $bandData['members'];
+
+    foreach ($jsonMembers as $memberData) {
+        $members[] = new Member(
+            $memberData['name'],
+            $memberData['role'],
+            $memberData['joined']
+        );
+    }
+
 //     // 2.3 Albums + Songs
 //     //    - Start with an empty array: $albums = [];
 //     //    - For each album:
 //     //        a) Build $songs = [];
 //     //        b) Loop songs and create Song objects (title, length).
 //     //        c) Create Album object with title, release_year, genre, and $songs.
-//
+    $albums = [];
+    $jsonAlbums = $bandData['albums'];
+
+    foreach ($jsonAlbums as $albumData) {
+        $songs = [];
+        $jsonSongs = $albumData['songs'];
+
+        foreach ($jsonSongs as $songData) {
+            $songs[] = new Song (
+                $songData['title'],
+                $songData['length']
+            );
+        }
+
+        $albums[] = new Album (
+            $albumData['title'],
+            $albumData['release_year'],
+            $albumData['genre'],
+            $songs
+        );
+    }
 //     // 2.4 Band
 //     //    - Create Band object with name, founded, origin, genres, $members, $albums, $links.
 //     //    - Append to $bands.
-// }
+    $band = new Band (
+        $bandData['name'],
+        $bandData['founded'],
+        $bandData['origin'],
+        $bandData['genres'],
+        $members,
+        $albums,
+        $links
+    );
+
+    $bands[] = $band;
+}
 
 
 // ---------------------------------------------------------
@@ -192,7 +222,27 @@ $bands = [];
  * - The structure matches the JSON content.
  */
 
+/**
+ * TODO 4: LOOP & PRINT
+ * - Loop through $bands
+ * - Print required fields using getters only
+ * - Escape text output (e.g., htmlspecialchars($band->getName()))
+ * - Check if links exist before printing them
+ *
+ * OPTIONAL:
+ * - Limit long lists (e.g., show first 2 songs) if the output becomes too large.
+ * - Add simple counts (albums per band, songs per album).
+ */
 
+// Example structure (NOT real code – write your own):
+// foreach ($bands as $band) {
+//   echo "<section class='band'>";
+//   // Band basic info (name, founded, origin, genres)
+//   // Members list
+//   // Albums with songs
+//   // Links (conditionals for each)
+//   echo "</section>";
+// }
 ?>
 
 <!doctype html>
@@ -215,27 +265,72 @@ $bands = [];
 <h1>Band Catalog</h1>
 
 <?php
-/**
- * TODO 4: LOOP & PRINT
- * - Loop through $bands
- * - Print required fields using getters only
- * - Escape text output (e.g., htmlspecialchars($band->getName()))
- * - Check if links exist before printing them
- *
- * OPTIONAL:
- * - Limit long lists (e.g., show first 2 songs) if the output becomes too large.
- * - Add simple counts (albums per band, songs per album).
- */
+foreach ($bands as $band) {
+    // Name, founded, origin
+    echo '<section class="band">';
+    echo '<h2>' . HtmlHelper::escape($band->getName()) . '</h2>';
 
-// Example structure (NOT real code – write your own):
-// foreach ($bands as $band) {
-//   echo "<section class='band'>";
-//   // Band basic info (name, founded, origin, genres)
-//   // Members list
-//   // Albums with songs
-//   // Links (conditionals for each)
-//   echo "</section>";
-// }
+    echo '<p class="meta">' . HtmlHelper::escape($band->getOrigin()) . ' · ' . HtmlHelper::escape((string)$band->getFounded()) . '</p>';
+
+    // Genres (comma-separated)
+    if ($genres = $band->getGenres()) {
+        echo '<p>Genres: ';
+        foreach ($genres as $index => $genre) {
+            echo HtmlHelper::escape($genre);
+            if ($index < count($genres) - 1) {
+                echo '.';
+            }
+        }
+        echo '</p>';
+    }
+
+    // Members
+    if ($members = $band->getMembers()) {
+        echo '<h3>Members</h3>';
+        
+        echo '<ul>';
+        foreach ($members as $member) {
+            echo '<li>' . HtmlHelper::escape($member->getName()) . ' - ' . HtmlHelper::escape($member->getRole()) . ' (' . HtmlHelper::escape((string)$member->getJoined()) . ')</li>';
+        }
+        echo '</ul>';
+    }
+
+    // Albums
+    if ($albums = $band->getAlbums()) {
+        echo '<h3>Albums</h3>';
+
+        foreach ($albums as $album) {
+            echo '<h4>' . HtmlHelper::escape($album->getTitle()) . ' (' . HtmlHelper::escape((string)$album->getReleaseYear()) . ') ' . HtmlHelper::escape($album->getGenre()) . '</h4>';
+
+            // Songs
+            if ($songs = $album->getSongs()) {
+                echo '<ul>';
+                foreach ($songs as $song) {
+                    echo '<li>' . HtmlHelper::escape($song->getTitle()) . ' (' . HtmlHelper::escape(($song->getLength())) . ')</li>';
+                }
+                echo '</ul>';
+            }
+        }
+    }
+
+    // Links
+    if ($links = $band->getLinks()) {
+        echo '<p class="links">';
+
+        if ($link = $links->getWebsite())
+            echo '<a href="' . HtmlHelper::escape($link) . '" target="_blank">Website</a>';
+        if ($link = $links->getWikipedia())
+            echo ' | <a href="' . HtmlHelper::escape($link) . '" target="_blank">Wikipedia</a>';
+        if ($link = $links->getSpotify())
+            echo ' | <a href="' . HtmlHelper::escape($link) . '" target="_blank">Spotify</a>';
+        if ($link = $links->getYoutube())
+            echo ' | <a href="' . HtmlHelper::escape($link) . '" target="_blank">Youtube</a>';
+
+        echo '</p>';
+    }
+
+    echo '</section>';
+}
 ?>
 
 </body>
